@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de muebles</title>
+
+<!--fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--Hoja de estilos-->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -22,177 +33,167 @@
         </nav>
     </div>
     <div class="hero"></div>
+    
     <!--Las categorias de la pagina-->
+    <!--#fix# Se añadió <section> para encerrar correctamente las categorías--> 
+   <div class="categorias">
+        <h2 class="text-center">Categorias de nuestros productos</h2>
+        <section class="listado-categorias">
+        
+            <div class="categoria">
+                <img src="sources/Imagenes Ecommerce/categoria1.jpg" alt="Imagen de categoria"/>
+                <a href="#">Oficina</a>
+            </div>
+
+            <div class="categoria">
+                <img src="sources/Imagenes Ecommerce/categoria2.jpg" alt="Imagen de categoria"/>
+                <a href="#">Hogar</a>
+            </div>
+
+            <div class="categoria">
+                <img src="sources/Imagenes Ecommerce/categoria3.jpg" alt="Imagen de categoria"/>
+                <a href="#">Cocina</a>
+            </div>
+            
+            
+        </section>
+    </div>
+    <!--#fix# Fin de sección de categorías correctamente cerrada-->
+
     <section>
-        <h2>Categorias de nuestros productos</h2>
-
-        <div>
-            <img src="sources/Imagenes Ecommerce/categoria1.jpg" alt="Imagen de categoria">
-            <a href="#">Oficina</a>
+        <div class="sobre-nosotros">
+            <div class="contenedor sobre-nosotros-grid">
+               <div class="texto-nosotros">
+                    <h2 class="text-center">Sobre nosotros</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quibusdam rerum rem itaque consequatur iusto distinctio magni blanditiis suscipit praesentium sit vero exercitationem, hic nemo dolore atque possimus ut eius!</p>
+                
+                </div>
+            </div>
         </div>
-
-        <div>
-            <img src="sources/Imagenes Ecommerce/categoria2.jpg" alt="Imagen de categoria">
-            <a href="#">Hogar</a>
-        </div>
-        <div>
-            <img src="sources/Imagenes Ecommerce/categoria3.jpg" alt="Imagen de categoria">
-            <a href="#">Cocina</a>
-        </div>
-
     </section>
 
-    <section>
-        <div>
-            <h2>Sobre nosotros</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quibusdam rerum rem itaque consequatur iusto distinctio magni blanditiis suscipit praesentium sit vero exercitationem, hic nemo dolore atque possimus ut eius!</p>
-        </div>
-
-    </section>
     <!--Listado de productos-->
-    <main>
-        <h2>Nuestros productos</h2>
+    <main class="conenido-principal contenedor">
+        <h2 class="text-center">Nuestros productos</h2>
         <!--Inicio de listado-->
+
         <!--Producto-->
-        <div>
-            <div>
-                
+        <div class="listado-productos">
+            <div class="producto">
                 <img src="/sources/Imagenes Ecommerce/producto1.jpg" alt="Imagen del producto">
-                
-                <div>
+                <div class="texto-producto">
                     <h3>producto 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse excepturi modi explicabo atque! Quam aspernatur non minus. Recusandae voluptates perspiciatis quam? Soluta nihil vel inventore mollitia quibusdam, accusamus deserunt atque.</p>
-                    <p>$ 010100101</p>
-                    <button type="button">Agregar al carrito</button>
-                </div>
-            
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    <!--#fix# Cambiar precio falso a uno realista -->
+                    <p class="precio">$199.99</p>
+                    <a class="btn">Agregar al carrito</a>               
+                 </div>
             </div>
+              <!--Fin de producto-->
 
-        </div>
-        <!--Fin de producto-->
-
-        <!--Producto-->
-        <div>
-            <div>
-                
-                <img src="/sources/Imagenes Ecommerce/producto2.jpg" alt="Imagen del producto">
-                
-                <div>
-                    <h3>producto 2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse excepturi modi explicabo atque! Quam aspernatur non minus. Recusandae voluptates perspiciatis quam? Soluta nihil vel inventore mollitia quibusdam, accusamus deserunt atque.</p>
-                    <p>$ 010100101</p>
-                    <button type="button">Agregar al carrito</button>
+                <!--Producto-->
+           
+                <div class="producto">
+                    <img src="/sources/Imagenes Ecommerce/producto2.jpg" alt="Imagen del producto">
+                    <div class="texto-producto">
+                        <h3>producto 2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                        <p class="precio">$249.99</p>
+                        <a class="btn">Agregar al carrito</a>                </div>
                 </div>
-            
-            </div>
+       
+            <!--Fin de producto-->
 
-        </div>
-        <!--Fin de producto-->        <!--Producto-->
-        <div>
-            <div>
-                
-                <img src="/sources/Imagenes Ecommerce/producto3.jpg" alt="Imagen del producto">
-                
-                <div>
-                    <h3>producto 3</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse excepturi modi explicabo atque! Quam aspernatur non minus. Recusandae voluptates perspiciatis quam? Soluta nihil vel inventore mollitia quibusdam, accusamus deserunt atque.</p>
-                    <p>$ 010100101</p>
-                    <button type="button">Agregar al carrito</button>
+            <!--Producto-->
+     
+                <div class="producto">
+                    <img src="/sources/Imagenes Ecommerce/producto3.jpg" alt="Imagen del producto">
+                    <div class="texto-producto">
+                        <h3>producto 3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                        <p class="precio">$159.99</p>
+                        <a class="btn">Agregar al carrito</a>                </div>
                 </div>
-            
-            </div>
+   
+            <!--Fin de producto-->
 
-        </div>
-        <!--Fin de producto-->
-        <!--Producto-->
-        <div>
-            <div>
-                
-                <img src="/sources/Imagenes Ecommerce/producto4.jpg" alt="Imagen del producto">
-                
-                <div>
-                    <h3>producto 4</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse excepturi modi explicabo atque! Quam aspernatur non minus. Recusandae voluptates perspiciatis quam? Soluta nihil vel inventore mollitia quibusdam, accusamus deserunt atque.</p>
-                    <p>$ 010100101</p>
-                    <button type="button">Agregar al carrito</button>
+            <!--Producto-->
+  
+                <div class="producto">
+                    <img src="/sources/Imagenes Ecommerce/producto4.jpg" alt="Imagen del producto">
+                    <div class="texto-producto">
+                        <h3>producto 4</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                        <p class="precio">$179.99</p>
+                        <a class="btn">Agregar al carrito</a>                </div>
                 </div>
-            
-            </div>
+                <!--Fin de producto-->
 
-        </div>
-        <!--Fin de producto-->
-
-        <!--Producto-->
-        <div>
-            <div>
-                
-                <img src="/sources/Imagenes Ecommerce/producto5.jpg" alt="Imagen del producto">
-                
-                <div>
-                    <h3>producto 5</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse excepturi modi explicabo atque! Quam aspernatur non minus. Recusandae voluptates perspiciatis quam? Soluta nihil vel inventore mollitia quibusdam, accusamus deserunt atque.</p>
-                    <p>$ 010100101</p>
-                    <button type="button">Agregar al carrito</button>
+            <!--Producto-->
+       
+                <div class="producto">
+                    <img src="/sources/Imagenes Ecommerce/producto5.jpg" alt="Imagen del producto">
+                    <div class="texto-producto">
+                        <h3>producto 5</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                        <p class="precio">$299.99</p>
+                        <a class="btn">Agregar al carrito</a>
+                    </div>
                 </div>
-            
-            </div>
+      
+            <!--Fin de producto-->
 
-        </div>
-        <!--Fin de producto-->        <!--Producto-->
-        <div>
-            <div>
-                
-                <img src="/sources/Imagenes Ecommerce/producto6.jpg" alt="Imagen del producto">
-                
-                <div>
-                    <h3>producto 6</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse excepturi modi explicabo atque! Quam aspernatur non minus. Recusandae voluptates perspiciatis quam? Soluta nihil vel inventore mollitia quibusdam, accusamus deserunt atque.</p>
-                    <p>$ 010100101</p>
-                    <button type="button">Agregar al carrito</button>
+            <!--Producto-->
+     
+                <div class="producto">
+                    <img src="/sources/Imagenes Ecommerce/producto6.jpg" alt="Imagen del producto">
+                    <div class="texto-producto">
+                        <h3>producto 6</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                        <p class="precio">$349.99</p>
+                        <a class="btn">Agregar al carrito</a>                </div>
                 </div>
-            
-            </div>
-
-        </div>
-        <!--Fin de producto-->
+        
+            <!--Fin de producto-->
+    </div>
     </main>
 
-    <footer>
+    <footer class="site-footer">
+        <div class="grid-footer contenedor">
+            <div>
+                <h3>Categorias</h3>
+                <nav class="footer-menu">
+                    <a href="#">Cocina</a>
+                    <!--#fix# Corregido "Oficiona" a "Oficina"-->
+                    <a href="#">Oficina</a>
+                    <a href="#">Jardin</a>
+                    <a href="#">Cochera</a>
+                    <a href="#">Dormitorio</a>
+                </nav>
+            </div>
 
-        <div>
+            <div>
+                <h3>Sobre nosotros</h3>
+                <nav class="footer-menu">
+                    <a href="#">Nuestra historia</a>
+                    <a href="#">Mision, Vision y Valores</a>
+                    <a href="#">Carreras</a>
+                    <a href="#">Politica de privacidad</a>
+                    <a href="#">Terminos de servicio</a>
+                </nav>
+            </div>
 
-            <h3>Categorias</h3>
-            <nav class="navegacion">
-                <a href="#">Cocina</a>
-                <a href="#">Oficiona</a>
-                <a href="#">Jardin</a>
-                <a href="#">Cochera</a>
-                <a href="#">Dormitorio</a>
-            </nav>
+            <div>
+                <h3>Soporte</h3>
+                <nav class="footer-menu">
+                    <a href="#">Preguntas frecuentes</a>
+                    <a href="#">Ayuda en linea</a>
+                    <a href="#">Confianza y seguridad</a>
+                </nav>
+            </div>
         </div>
-
-        <div>
-
-            <h3>Sobre nosotros</h3>
-            <nav>
-                <a href="#">Nuestra historia</a>
-                <a href="#">Mision, Vision y Valores</a>
-                <a href="#">Carreras</a>
-                <a href="#">Politica de privacidad</a>
-                <a href="#">Terminos de servicio</a>
-            </nav>
-        </div>
-
-        <div>
-            <h3>Soporte</h3>
-            <nav>
-                <a href="#">Preguntas frecuentes</a>
-                <a href="#">Ayuda en linea</a>
-                <a href="#">Confianza y seguridad</a>
-            </nav>
-        </div>
-
-        <p>Todos los derechos reservados a Joshua Ginez</p>
+   
+        <p class="copyright">Todos los derechos reservados a Joshua Ginez</p>
     </footer>
 </body>
 </html>
